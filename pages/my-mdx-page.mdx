@@ -1,0 +1,35 @@
+import MyComponent from "./../src/components/MyComponent";
+import MyLayoutComponent from "./../src/components/MyLayoutComponent";
+
+export const meta = {
+  author: "Rich Haines",
+};
+
+# My MDX Page
+
+This is a list in markdown
+
+- One
+- Two
+- Three
+- Four
+
+```jsx
+import React from "react";
+
+const MyComponent = () => {
+  return <h1>Hello MyComponent</h1>;
+};
+
+export default MyComponent;
+```
+
+Checkout my React component;
+
+<MyComponent></MyComponent>
+
+export default ({ children }) => (
+  <MyLayoutComponent meta={meta}> {children} </MyLayoutComponent>
+
+
+)
